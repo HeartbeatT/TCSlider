@@ -21,10 +21,11 @@
     [slider setBackgroundColor:[UIColor redColor]];
     [slider setMinimumValue:100];
     [slider setMaximumValue:200];
-    [slider setThumbImage:[UIImage imageNamed:@"1.jpg"]];
+//    [slider setThumbImage:[UIImage imageNamed:@"1.jpg"]];
+//    [slider SetRollingedBackgroundImage:[UIImage imageNamed:@"1.jpg"]];
     [self.view addSubview:slider];
     
-    [slider addTarget:self action:@selector(Click:)forControlEvents:UIControlEventValueChanged];
+    [slider addTarget:self action:@selector(Click:)forControlEvents:UIControlEventValueChanged | UIControlEventTouchDown | UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,20 +35,23 @@
 
 - (void)Click:(CustomSlider *)slider{
     
-    NSLog(@"%f",slider.value);
-    if (slider.touchState == UIControlEventTouchDown) {
-        
+//    NSLog(@"%f",slider.value);
+    float value = slider.value;
+    
+    //    if (slider.touchState == UIControlEventTouchDown)
+//    {
+//        
 //        NSLog(@"star");
-    
-    }else if (slider.touchState == UIControlEventValueChanged){
-        
+//    
+//    }else if (slider.touchState == UIControlEventValueChanged){
+//        
 //        NSLog(@"change");
-    
-    }else if (slider.touchState == UIControlEventTouchUpInside){
-        
+//    
+//    }else if (slider.touchState == UIControlEventTouchUpInside){
+//        
 //        NSLog(@"end");
-    
-    }
+//    
+//    }
 
 
 }

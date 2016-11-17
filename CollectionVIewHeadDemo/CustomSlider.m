@@ -91,6 +91,9 @@ const float thumpSize = 30;
 //手势状态停止的值
 - (float)value{
     
+    
+    
+    
     float width = self.bounds.size.width;
     if (_point.x < 0) {
         
@@ -107,8 +110,8 @@ const float thumpSize = 30;
     NSMutableArray *Array = [NSMutableArray array];
     [Array removeAllObjects];
     float sumValue = _maximumValue - _minimumValue;
-    for (int i = _minimumValue; i <= _maximumValue; i++) {
-        
+    for (int i = _minimumValue; i <= _maximumValue; i++)
+    {
         [Array addObject:[NSString stringWithFormat:@"%d",i]];
         
     }

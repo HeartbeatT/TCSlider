@@ -29,10 +29,10 @@
                                                         UIControlEventValueChanged 滑动过程中的点击状态
                                                         UIControlEventTouchUpInside 结束滑动或者点击完成后的状态
                                                    */
-//设置为滑过的背景图
-- (void)SetUnRollingBackgroundImage:(UIImage *)backgroundImage;
-//设置滑过的背景图
-- (void)SetRollingedBackgroundImage:(UIImage *)rollingedImage;
+////设置为没有滑过的背景图
+//- (void)SetUnRollingBackgroundImage:(UIImage *)backgroundImage;
+////设置滑过的背景图
+//- (void)SetRollingedBackgroundImage:(UIImage *)rollingedImage;
 
 
 
